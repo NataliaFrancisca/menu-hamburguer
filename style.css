@@ -11,7 +11,7 @@ body{
     flex-direction: column;
     align-items: center;
 
-    background-color: rgb(85, 117, 223);
+    background-color: rgb(165, 94, 223);
 
     font-family: 'Courier New', Courier, monospace;
 }
@@ -24,7 +24,7 @@ header{
     justify-content: center;
     flex-direction: column;
     color: whitesmoke;
-    background-color: rgba(20,20,20,.5);
+    background-color:  rgba(23, 23, 23, .4);
 }
 
 .menu-hamburger{
@@ -49,10 +49,19 @@ header{
     list-style: none;
 }
 
+.menu-hamburguer-elements a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-hamburguer-elements a:hover{
+    color: rgba(20,20,20,.8)
+}
+
 
 /* BOTÃO MENU HAMBURGUER */
 .menu {
-    background: rgb(85, 117, 223);
+    background-color: rgb(214, 161, 214);
     width: 60px;
     height: 60px;
     margin: 1rem 1rem;
@@ -64,7 +73,7 @@ header{
 .hamburguer {
     position: relative;
     display: block;
-    background: #000;
+    background: #fff;
     width: 30px;
     height: 2px;
     top: 29px;
@@ -74,7 +83,7 @@ header{
   
 .hamburguer:before,
 .hamburguer:after {
-    background: #000;
+    background: #ffff;
     content: '';
     display: block;
     width: 100%;
@@ -121,6 +130,10 @@ input:checked ~ .menu-hamburguer-elements{
         height: 20%;
     }
 
+    .menu-hamburguer-elements a:hover{
+        color: rgb(214, 161, 214);
+    }
+    
     .menu-hamburger{
         display: flex;
         width: auto;
@@ -128,12 +141,13 @@ input:checked ~ .menu-hamburguer-elements{
         align-self: flex-start;
         overflow: auto;
         z-index: 1;
+        color: white
     }
 
     .menu-hamburguer-elements{
         width: 60%;
         height: 100%;
-        background-color: rgb(20,20,20);
+        background-color: rgba(10,10,10,.9);
         position: fixed;
         left: -60%;
         top: 0;
